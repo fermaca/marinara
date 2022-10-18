@@ -4,11 +4,123 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Partner Landing page</title>
+    <link rel="stylesheet" href="/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://unpkg.com/htmlincludejs"></script>
   </head>
   <body>
-    <include src="/components/slider.html"></include>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/Logo-Okay-Lah-web-01.png" style="max-width: 100px; width:100%"; height="auto"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Block one</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Block two</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Block three</a>
+            </li>
+          </ul>
+          <div class="d-flex flex-row align items text-center justify-content-center gap-4">
+            <a href="#" class="btn btn-outline-primary"><i class="bi bi-bicycle me-2"></i>Pedir a domicilio</a>
+            <ul class="fs-4 list-unstyled d-flex flex-row align-items-center justify-content-center gap-4 p-0 m-0">
+              <li ><a href="#" class="text-dark"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#" class="text-dark"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <!-- Carousel -->
+<div id="dtb-carousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+      <div class="carousel-item active"
+          style="background: url('https://images.unsplash.com/photo-1622643944007-450264a5f9a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80'); background-size: cover; background-position: center center;">
+          <div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
+            <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
+            <span class="fs-4">Pide ahora a domicilio desde nuestra nueva tienda</span>
+              <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-bicycle me-2"></i>Pedir a domicilio </a>
+          </div>
+      </div>
+      <div class="carousel-item"
+          style="background: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80'); background-size: cover; background-position: center center;">
+          <div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
+              <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
+              <span class="fs-4">Pide ahora a domicilio desde nuestra nueva tienda</span>
+              <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-bicycle me-2"></i>Pedir a domicilio </a>
+          </div>
+      </div>
+      <div class="carousel-item"
+          style="background: url('https://images.unsplash.com/photo-1576863514292-542ef379c13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80'); background-size: cover; background-position: center center;">
+          <div class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
+              <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
+              <span class="fs-4">Pide ahora a domicilio desde nuestra nueva tienda</span>
+              <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-bicycle me-2"></i>Pedir a domicilio </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Jumbotron -->
+  <div class="container py-5">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Change the background</h2>
+          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+          <button class="btn btn-outline-light" type="button">Example button</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Add borders</h2>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+          <button class="btn btn-outline-secondary" type="button">Example button</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      © 2022
+    </footer>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#dtb-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#dtb-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script></body>
 </html>
