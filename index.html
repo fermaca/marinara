@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="img/Logo-Okay-Lah-web-01.png" style="max-width: 100px; width:100%" ;
           height="auto"></a>
@@ -34,7 +34,7 @@
           </li>
         </ul>
         <div class="d-flex flex-row align items text-center justify-content-center gap-4">
-          <a href="#" class="btn btn-outline-primary">Pedir a domicilio</a>
+          <a href="#" class="btn btn-outline-danger">Pedir a domicilio</a>
           <ul class="fs-4 list-unstyled d-flex flex-row align-items-center justify-content-center gap-4 p-0 m-0">
             <li><a href="#" class="text-dark"><i class="bi bi-facebook"></i></a></li>
             <li><a href="#" class="text-dark"><i class="bi bi-instagram"></i></a></li>
@@ -44,63 +44,21 @@
     </div>
   </nav>
 
+  <!-- Video hero -->
 
+  <div class="container-fluid ratio ratio-16x9 d-flex flex-column align-items-center justify-content-center">
 
-
-  <!-- Carousel -->
-  <div id="dtb-carousel" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="3"></button>
+    <video class="position-absolute" src="img/video2.mp4" autoplay muted loop style="object-fit: cover;"></video>
+    <div class="bg-black bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center text-bg-dark">
+      <img class="d-block mx-auto mb-4" src="img/Logo-Okay-Lah-web-01.png" alt="" width="220" height="auto">
+      <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
+      <span class="fs-4 mb-5">Pide ahora a domicilio desde nuestra nueva tienda</span>
+      <a href="#" class="btn btn-danger btn-lg fs-3"></i>Pedir a domicilio </a>
     </div>
-
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active"
-        style="background: url('https://images.unsplash.com/photo-1622643944007-450264a5f9a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80'); background-size: cover; background-position: center center;">
-
-        <div
-          class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
-          <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
-          <div class="d-flex flex-row gap-4">
-            <a href="#" class="btn btn-primary btn-lg">Pedir a domicilio </a>
-            <a href="#" class="btn btn-lg btn-light">Reservar una mesa</a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item"
-        style="background: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80'); background-size: cover; background-position: center center;">
-        <div
-          class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
-          <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
-          <span class="fs-4">Pide ahora a domicilio desde nuestra nueva tienda</span>
-          <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-bicycle me-2"></i>Pedir a domicilio </a>
-        </div>
-      </div>
-      <div class="carousel-item"
-        style="background: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80'); background-size: cover; background-position: center center;">
-      </div>
-      <div class="carousel-item"
-        style="background: url('https://images.unsplash.com/photo-1576863514292-542ef379c13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80'); background-size: cover; background-position: center center;">
-        <div
-          class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
-          <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#dtb-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#dtb-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
+
+
+
 
 
   <!-- Hero -->
@@ -119,7 +77,7 @@
           preparado por nuestros hábiles chefs con los mejores ingredientes.</p>
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><i
+          <button type="button" class="btn btn-danger btn-lg px-4 me-md-2"><i
               class="bi bi-bookmark-star-fill me-3"></i>Reserva una mesa</button>
           <button type="button" class="btn btn-outline-secondary btn-lg px-4">Ver carta</button>
         </div>
@@ -129,7 +87,7 @@
 
 
   <!-- Hero 2 -->
-  <div class="container-fluid bg-primary p-5">
+  <div class="container-fluid bg-danger p-5">
     <div class="container my-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-white">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -143,7 +101,7 @@
               una nueva experiencia gastronómica informal centrada en un servicio al cliente excepcional y una gran
               comida.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Pide a domicilio</button>
+              <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Pide a domicilio</button>
             </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -172,7 +130,7 @@
             preparado por nuestros hábiles chefs con los mejores ingredientes.</p>
 
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><i
+            <button type="button" class="btn btn-danger btn-lg px-4 me-md-2"><i
                 class="bi bi-bookmark-star-fill me-3"></i>Reserva una mesa</button>
             <button type="button" class="btn btn-outline-secondary btn-lg px-4">Ver carta</button>
           </div>
@@ -234,12 +192,12 @@
             <div class="card-body">
               <h5 class="card-title">Restaurantes de vanguardia</h5>
               <p class="card-text">Ven a conocer nuestros restaurantes, estamos por toda valencia</p>
-              <a href="#" class="btn btn-primary">Ver restaurantes</a>
+              <a href="#" class="btn btn-danger">Ver restaurantes</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3325%; top: 201px;">
-          <div class="card text-bg-primary text-center p-3">
+          <div class="card text-bg-danger text-center p-3">
             <figure class="mb-0">
               <blockquote class="blockquote">
                 <p>A well-known quote, contained in a blockquote element.</p>
@@ -294,7 +252,7 @@
 
   <!-- Gallery -->
 
-  <div class="album py-5 bg-light">
+  <!-- <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
         <span class="fs-1 fw-bold mb-5 text-center">Novedades en Okay Lah! No te lo pierdas</span>
@@ -330,97 +288,91 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+
+  <!-- video -->
+
+  <div class="ratio ratio-16x9">
+    <video src="img/video.mp4" autoplay muted loop></video>
   </div>
 
+  <!-- video -->
 
+  <div class="container-fluid">
+    <div class="container">
+      <h2 class="pb-2 text-center">Especialidades de la casa</h2>
+      <p class="lead mb-4">ntre semana, come el menú del día de Okay Lah. Pídelo online para llevar o para que te lo
+        acerquemos a casa o a la oficina. Y si lo prefieres, ¡ven a comer a nuestro restaurante! Puedes reservar mesa en
+        terraza o dentro.</p>
+      <div class="ratio ratio-16x9">
+        <video src="img/video2.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+  </div>
 
 
 
   <!-- Features -->
 
   <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 text-center">Especialidades de la casa</h2>
-    <p class="lead mb-4">ntre semana, come el menú del día de Okay Lah. Pídelo online para llevar o para que te lo
+    <h2 class="pb-2 text-center">Promociones y ofertas en Okay Lah!</h2>
+    <p class="lead mb-4">Entre semana, come el menú del día de Okay Lah. Pídelo online para llevar o para que te lo
       acerquemos a casa o a la oficina. Y si lo prefieres, ¡ven a comer a nuestro restaurante! Puedes reservar mesa en
       terraza o dentro.</p>
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
           style="background-size: cover; background-position: center center; background-image: url('https://images.unsplash.com/photo-1441850605338-1b0b5a22e7b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80');">
+          <div class="h-100 w-100 bg-opacity-50 bg-black position-absolute" style="z-index: 0;"></div>
           <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1 justify-content-between h-100"
             style="z-index: 1;">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Menú del día para todos los bolsillos</h3>
-            <p class="pt-5 mt-5 mb-4 fs-4 lh-1 fw-normal">De lunes a Viernes de 13h a 16h</h3>
+            <p class="pt-5 mt-5 mb-4 fs-4 lh-1 fw-normal">Bebida incluída<span class="p-1 bg-danger rounded fw-bold ms-3">12,90€</span></h3>
             <ul class="w-100 justify-content-start align-items-center d-flex flex-row list-unstyled gap-2">
               <li class="">
-                <img
-                  src="https://images.unsplash.com/photo-1637806931091-25f8cee13349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1370&q=80"
-                  alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="">
-                <small>Bebida incluída</small>
-              </li>
-              <li class="">
-                <small>12,90€</small>
+                <small><i class="bi bi-calendar3 me-3 fs-4"></i>De Lunes a Viernes de 13h a 16h</small>
               </li>
             </ul>
           </div>
-          <div class="h-100 w-100 bg-opacity-50 bg-black position-absolute" style="z-index: 0;"></div>
         </div>
       </div>
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-size: cover; background-position: center center; background-image: url('https://images.unsplash.com/photo-1441850605338-1b0b5a22e7b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80');">
+          style="background-size: cover; background-position: center center; background-image: url('https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80');">
+          <div class="h-100 w-100 bg-opacity-50 bg-black position-absolute" style="z-index: 0;"></div>
           <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1 justify-content-between h-100"
             style="z-index: 1;">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Menú del día para todos los bolsillos</h3>
+            <p class="pt-5 mt-5 mb-4 fs-4 lh-1 fw-normal">Bebida incluída<span class="p-1 bg-danger rounded fw-bold ms-3">12,90€</span></h3>
             <ul class="w-100 justify-content-start align-items-center d-flex flex-row list-unstyled gap-2">
               <li class="">
-                <img
-                  src="https://images.unsplash.com/photo-1637806931091-25f8cee13349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1370&q=80"
-                  alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="">
-                <small>Earth</small>
-              </li>
-              <li class="">
-                <small>3d</small>
+                <small><i class="bi bi-calendar3 me-3 fs-4"></i>De Lunes a Viernes de 13h a 16h</small>
               </li>
             </ul>
           </div>
-          <div class="h-100 w-100 bg-opacity-25 bg-black position-absolute" style="z-index: 0;"></div>
         </div>
       </div>
       <div class="col">
-        <a href="#" class="text-decoration-none card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-size: cover; background-position: center center; background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-size: cover; background-position: center center; background-image: url('https://images.unsplash.com/photo-1511910849309-0dffb8785146?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');">
+          <div class="h-100 w-100 bg-opacity-50 bg-black position-absolute" style="z-index: 0;"></div>
           <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1 justify-content-between h-100"
             style="z-index: 1;">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Prueba la mejor comida asiática de tu ciudad, todo en un
-              mismo restaurante</h3>
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Menú del día para todos los bolsillos</h3>
+            <p class="pt-5 mt-5 mb-4 fs-4 lh-1 fw-normal">Bebida incluída<span class="p-1 bg-danger rounded fw-bold ms-3">12,90€</span></h3>
             <ul class="w-100 justify-content-start align-items-center d-flex flex-row list-unstyled gap-2">
               <li class="">
-                <img
-                  src="https://images.unsplash.com/photo-1637806931091-25f8cee13349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1370&q=80"
-                  alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="">
-                <small>Earth</small>
-              </li>
-              <li class="">
-                <small>3d</small>
+                <small><i class="bi bi-calendar3 me-3 fs-4"></i>De Lunes a Viernes de 13h a 16h</small>
               </li>
             </ul>
           </div>
-          <div class="h-100 w-100 bg-opacity-50 bg-black position-absolute" style="z-index: 0;"></div>
-        </a>
+        </div>
       </div>
-
-
     </div>
   </div>
-<!-- contact form -->
-<!-- <div class="container w-50">
+  <!-- contact form -->
+  <!-- <div class="container w-50">
 <div class="fcf-body">
 
   <div id="fcf-form">
@@ -450,7 +402,7 @@
       </div>
 
       <div class="fcf-form-group">
-          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-danger fcf-btn-lg fcf-btn-block">Send Message</button>
       </div>
 
 
@@ -462,6 +414,64 @@
 </div> -->
 
 
+
+
+
+  <!-- Carousel -->
+  <div id="dtb-carousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#dtb-carousel" data-bs-slide-to="3"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active"
+        style="background: url('https://images.unsplash.com/photo-1622643944007-450264a5f9a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80'); background-size: cover; background-position: center center;">
+
+        <div
+          class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
+          <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
+          <div class="d-flex flex-row gap-4">
+            <a href="#" class="btn btn-danger btn-lg">Pedir a domicilio </a>
+            <a href="#" class="btn btn-lg btn-light">Reservar una mesa</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item"
+        style="background: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80'); background-size: cover; background-position: center center;">
+        <div
+          class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
+          <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
+          <span class="fs-4">Pide ahora a domicilio desde nuestra nueva tienda</span>
+          <a href="#" class="btn btn-danger btn-lg"><i class="bi bi-bicycle me-2"></i>Pedir a domicilio </a>
+        </div>
+      </div>
+      <div class="carousel-item"
+        style="background: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80'); background-size: cover; background-position: center center;">
+      </div>
+      <div class="carousel-item"
+        style="background: url('https://images.unsplash.com/photo-1576863514292-542ef379c13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80'); background-size: cover; background-position: center center;">
+        <div
+          class="h-100 w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-4 bg-opacity-50 bg-black text-white">
+          <span class="fs-1 fw-bold">La mejor comida asíatica de la ciudad</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#dtb-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#dtb-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
   <!-- prefooter -->
 
   <div class="px-4 py-5 my-5 text-center">
@@ -472,12 +482,11 @@
         popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
         prebuilt components, and powerful JavaScript plugins.</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Pedir online</button>
+        <button type="button" class="btn btn-danger btn-lg px-4 gap-3">Pedir online</button>
         <button type="button" class="btn btn-outline-secondary btn-lg px-4">Reservar una mesa</button>
       </div>
     </div>
   </div>
-
   <!-- footer -->
 
   <div class="container">
