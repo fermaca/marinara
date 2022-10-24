@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delitbee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container d-flex h-100 justify-content-center align-items-center" style="min-height: 100vh;">
+      <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#deliveryModal">
+        Open Address selector
+      </a>
+    </div>
+  </div>
+  <!-- Modal Delivery-->
+  <div class="modal fade" id="deliveryModal" tabindex="-1" aria-labelledby="deliveryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-2 p-md-4">
+        <button type="button" class="position-absolute bg-white fs-4 align-self-end border-0" data-bs-dismiss="modal" aria-label="Close"><i
+            class="bi bi-x-circle-fill"></i></button>
+        <div class="modal-header d-flex flex-column align-items-center justify-content-center border-0">
+          <img width="80" height="auto" class="align-self-center" src="img/logo-eltarantinchiflado.png" />
+        </div>
+        <div class="modal-body border-0 gap-4 d-flex flex-column">
+          <p class="fw-normal fs-5 text-center text-dark">Antes de continuar necesitamos comprobar
+            si repartimos a domicilio en tu zona</p>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-geo-alt-fill mx-2 text-dark"></i></span>
+            <input type="text" class="form-control" placeholder="Dirección y número de la calle">
+          </div>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-building mx-2 text-dark"></i><span
+                class="text-dark"></span></span>
+            <input class="form-control" placeholder="Número de la calle"><button class="btn btn-sm btn-primary"
+              type="button">Añadir</button>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#" class="btn btn-link text-center text-dark mx-auto" data-bs-toggle="modal"
+            data-bs-target="#collectionModal">Cambiar a recogida en el local</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal collection -->
+  <div class="modal fade" id="collectionModal" tabindex="-1" aria-labelledby="collectionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-2 p-md-4">
+        <button type="button" class="position-absolute bg-white fs-4 align-self-end border-0" data-bs-dismiss="modal" aria-label="Close"><i
+          class="bi bi-x-circle-fill"></i></button>
+        <div class="modal-header d-flex flex-column align-items-center justify-content-center border-0">
+          <img width="80" height="auto" class="align-self-center" src="img/logo-eltarantinchiflado.png" />
+        </div>
+        <div class="modal-body border-0 gap-4 d-flex flex-column">
+          <p class="fw-normal fs-5 text-center text-dark">¿Dónde quieres recoger tu pedido?</p>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-shop mx-2 text-dark"></i></span>
+              <div class="form-select px-2 py-2 d-flex flex-row justify-content-between align-items-center rounded-end" type="button"
+                id="storeselector" data-bs-toggle="dropdown" aria-expanded="false"><span>Carrer de Dolores Marqués, 2,
+                  46020 València, Valencia, España</span></div>
+              <ul class="dropdown-menu dropdown-menu-end py-0">
+                <li class="py-2 border-bottom"><span class="dropdown-item">
+                    <div class="d-flex flex-column"><span class="h6">Del Poble - Benimaclet</span><span
+                        class="fw-light fs-6 my-0 text-wrap">Carrer de Dolores Marqués, 2, 46020 València, Valencia,
+                        España</span></div>
+                  </span></li>
+                <li class="py-2 border-bottom"><span class="dropdown-item">
+                    <div class="d-flex flex-column"><span class="h6">Del Poble - Malilla</span><span
+                        class="fw-light fs-6 my-0 text-wrap">Carr. de Malilla, 86, 46026, Valencia, España</span>
+                    </div>
+                  </span></li>
+                <li class="py-2 border-bottom"><span class="dropdown-item">
+                    <div class="d-flex flex-column"><span class="h6">Del Poble - Baleares</span><span
+                        class="fw-light fs-6 my-0 text-wrap">Av. de les Balears, 60, 46023 València, Valencia,
+                        España</span></div>
+                  </span></li>
+              </ul>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#" class="btn btn-link text-center text-dark mx-auto" data-bs-toggle="modal"
+            data-bs-target="#deliveryModal">Cambiar a entrega a domicilio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
